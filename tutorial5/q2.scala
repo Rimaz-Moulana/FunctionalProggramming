@@ -1,4 +1,4 @@
-object test1 extends App{
+object test2 extends App{
     def GCD(x:Int,y:Int):Int = y match{
         case 0 => x
         case y if (y>x) => GCD(y,x)
@@ -11,7 +11,7 @@ object test1 extends App{
     }
     def primeSeq(n:Int):Any={
         if(prime(n)==true) println(n)
-        if(n>2) primeSeq((n-1))
+        if(n>2) primeSeq(n-1)
     }
     print(primeSeq(10))
 }
